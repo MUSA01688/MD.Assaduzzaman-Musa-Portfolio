@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a Network Engineer — skills, projects, and contact information." />
+  <title>Musa | Network Engineer Portfolio</title>
+  <style>
+    :root { --bg:#07111f; --panel:#101e30; --text:#edf4ff; --muted:#a9b8cc; --accent:#37d6a1; --line:#20334a; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1060px, calc(100% - 40px)); margin:auto; }
+    header { position:sticky; top:0; z-index:5; background:rgba(7,17,31,.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    nav { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight:800; letter-spacing:.4px; } .brand span { color:var(--accent); }
+    .navlinks { display:flex; gap:24px; color:var(--muted); font-size:.94rem; }
+    .navlinks a:hover { color:var(--accent); }
+    .hero { padding:94px 0 78px; display:grid; grid-template-columns:1.35fr .65fr; align-items:center; gap:50px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:.78rem; }
+    h1 { font-size:clamp(2.5rem,6vw,4.8rem); line-height:1.08; margin:14px 0 20px; letter-spacing:-2px; }
+    h1 span { color:var(--accent); }
+    .intro { color:var(--muted); font-size:1.08rem; max-width:650px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-block; border:1px solid var(--line); padding:11px 18px; border-radius:10px; font-weight:700; }
+    .btn.primary { background:var(--accent); color:#062018; border-color:var(--accent); }
+    .btn:hover { transform:translateY(-1px); }
+    .visual { background:linear-gradient(145deg,#11263b,#0a1728); border:1px solid var(--line); border-radius:22px; padding:28px; box-shadow:0 20px 70px #0005; }
+    .terminal { color:var(--muted); font: .9rem/2.1 ui-monospace,SFMono-Regular,Consolas,monospace; }
+    .terminal b { color:var(--accent); font-weight:500; }
+    section { padding:62px 0; border-top:1px solid var(--line); }
+    h2 { font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.2; margin:0 0 12px; }
+    .sub { color:var(--muted); margin:0 0 28px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:22px; }
+    .card h3 { margin:0 0 8px; font-size:1.1rem; }
+    .card p { color:var(--muted); margin:0 0 14px; font-size:.95rem; }
+    .tags { display:flex; flex-wrap:wrap; gap:7px; }
+    .tag { font-size:.78rem; color:#baf5df; background:#12392f; border:1px solid #1d5948; border-radius:999px; padding:3px 9px; }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:9px 13px; color:#dbe7f6; }
+    .about { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+    .about p { color:var(--muted); margin-top:0; }
+    .contactbox { background:linear-gradient(135deg,#102b2a,#101e30); border:1px solid #245445; border-radius:18px; padding:28px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    footer { padding:26px 0 38px; color:var(--muted); font-size:.9rem; }
+    @media(max-width:760px) { .hero { grid-template-columns:1fr; padding:65px 0; gap:28px; } .cards { grid-template-columns:1fr; } .about { grid-template-columns:1fr; } .navlinks { gap:12px; font-size:.82rem; } }
+    @media(max-width:430px) { .navlinks a:nth-child(2) { display:none; } .contactbox { align-items:flex-start; flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">MUSA<span>.</span></a>
+      <div class="navlinks">
+        <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">Networking • IT Infrastructure</div>
+        <h1>Hi, I'm <span>Musa.</span><br />Aspiring Network Engineer</h1>
+        <p class="intro">I’m building my career in networking and IT infrastructure. I’m interested in practical network setup, troubleshooting, and reliable connectivity for people and businesses.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Projects ↗</a>
+          <a class="btn" href="mailto:your-email@example.com">Contact Me</a>
+        </div>
+      </div>
+      <div class="visual" aria-label="Network terminal illustration">
+        <div class="terminal">
+          <div><b>$</b> whoami</div>
+          <div>Network Engineer</div>
+          <div><b>$</b> focus --areas</div>
+          <div>Routing &amp; Switching</div>
+          <div>LAN / WAN • TCP/IP</div>
+          <div>Network Troubleshooting</div>
+          <div><b>$</b> status</div>
+          <div><b>●</b> Learning. Building. Improving.</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="eyebrow">Selected work</div>
+        <h2>Projects</h2>
+        <p class="sub">Add three real projects here. Include a short description, what you did, tools used, and a link to proof (GitHub, screenshots, or a live demo).</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Small Office Network Design</h3>
+            <p>Document a sample office LAN with an IP plan, VLAN layout, and a simple topology diagram. Replace this with your actual project details.</p>
+            <div class="tags"><span class="tag">Cisco Packet Tracer</span><span class="tag">VLAN</span><span class="tag">IP Planning</span></div>
+            <p style="margin:16px 0 0"><a href="https://github.com/" target="_blank" rel="noopener">Project link ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>Router &amp; Switch Configuration Lab</h3>
+            <p>Show a lab with basic device configuration, inter-VLAN routing, and connectivity tests. Add screenshots or configuration notes.</p>
+            <div class="tags"><span class="tag">Routing</span><span class="tag">Switching</span><span class="tag">Lab</span></div>
+            <p style="margin:16px 0 0"><a href="https://github.com/" target="_blank" rel="noopener">Project link ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>Network Troubleshooting Case Study</h3>
+            <p>Describe a real or clearly labeled practice scenario: symptoms, checks performed, root cause, and resolution.</p>
+            <div class="tags"><span class="tag">Troubleshooting</span><span class="tag">Documentation</span></div>
+            <p style="margin:16px 0 0"><a href="https://github.com/" target="_blank" rel="noopener">Project link ↗</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="eyebrow">Technical toolkit</div>
+        <h2>Skills &amp; Tools</h2>
+        <p class="sub">Keep only the skills you can confidently discuss in an interview; add your level or examples where possible.</p>
+        <div class="skills">
+          <span class="skill">TCP/IP</span><span class="skill">LAN / WAN</span><span class="skill">IPv4 Subnetting</span>
+          <span class="skill">VLANs</span><span class="skill">Routing &amp; Switching</span><span class="skill">Cisco IOS</span>
+          <span class="skill">PuTTY / SSH</span><span class="skill">MikroTik Basics</span><span class="skill">Fiber Optics</span>
+          <span class="skill">Network Troubleshooting</span><span class="skill">CCTV / NVR Networking</span><span class="skill">CCNA Training</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="eyebrow">A little about me</div>
+        <h2>About</h2>
+        <div class="about">
+          <p>I’m an aspiring Network Engineer focused on developing practical skills in network configuration, support, and infrastructure. I enjoy learning how systems connect and how to diagnose issues methodically.</p>
+          <div class="card">
+            <h3>Currently working on</h3>
+            <p>Strengthening networking fundamentals, building hands-on labs, documenting projects, and preparing for professional opportunities.</p>
+            <p><strong>Training:</strong> CCNA — update with your institute and completion date, if applicable.</p>
+            <p><strong>Location:</strong> Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contactbox">
+          <div><div class="eyebrow">Let's connect</div><h2>Have an opportunity?</h2><p class="sub" style="margin:0">Reach out about networking roles, projects, or collaboration.</p></div>
+          <a class="btn primary" href="mailto:your-email@example.com">your-email@example.com ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Musa • Built with HTML &amp; CSS • <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></div></footer>
+</body>
+</html>
